@@ -6,7 +6,6 @@ use App\Models\Diary;
 use Illuminate\Http\Request;
 use App\Repository\JournalRepository;
 use App\Repository\TaskRepository;
-use App\Usecase\Openai;
 use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
@@ -45,12 +44,7 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the incoming request
-        $validated = $request->validate([
-            'date' => 'required|date',
-            'title' => 'required|string',
-        ]);
-
+       
         // Extract the date and content from the request
         $date = $request->input('date');
         $title = $request->input('title');
