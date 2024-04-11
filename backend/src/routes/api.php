@@ -17,5 +17,3 @@ Route::get('/journal-date/{date}/reflection',[DiaryController::class, 'selectFee
 Route::get('/journal-date/{date}/task',[TaskController::class, 'getTask']);
 Route::post('/journal-date/insert-task',[TaskController::class, 'store']);
 Route::delete('/journal-date/delete-task/{taskId}',[TaskController::class, 'destroy']);
-
-Route::post('/line_webhook', [LineWebhookController::class, 'post']);

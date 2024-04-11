@@ -86,7 +86,7 @@ class LineWebhookController extends Controller
 
                         // $description → ユーザーが入力した文字が連結された状態で入っている
                         // ここでカレンダーに予定を追加する
-                        InsertCalendar::exec($description, $line_user_id);
+                    
                         // trx_line_messages.is_set_calenderを1に更新する
                         LineMessageRepository::updateIsSetMessage($message_ids);
                         LineSendMessage::exec('journalの送信完了しました。', $line_user_id);

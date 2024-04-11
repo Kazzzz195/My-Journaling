@@ -232,9 +232,11 @@ export default function note(){
                     ))}
                 </div>
             </div>
+            <div>
                 <Button variant="contained" onClick={handleAiFeedback}>Get AI Feedback</Button>
-        </div>
+            </div>
             <div className="inline-flex mt-4">
+            
                 <button  variant="contained" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" onClick={handlePrevDay}>
                 Previous day
                 </button>
@@ -242,6 +244,8 @@ export default function note(){
                     Next day  
                 </button>
             </div>
+        </div>
+            
     </>
   )
 }
