@@ -7,7 +7,7 @@
 <img src="./images/app7.jpg">
 
 ### 2. ログイン画面　
-<img src="./images/app5.jpg">
+<img src="images/app5 copy.png">
 
 ### 3. /dashboard 画面
 ここではカレンダーの日付の枠を押すとその日付のジャーナリングページに飛びます。
