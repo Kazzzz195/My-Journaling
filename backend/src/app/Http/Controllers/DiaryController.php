@@ -54,30 +54,16 @@ class DiaryController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the incoming request
-        $validated = $request->validate([
-            'date' => 'required|date',
-            'content' => 'required|string',
-            'id'=> 'required|integer'
-        ]);
-
+       
         // Extract the date and content from the request
         $date = $request->input('date');
         $content = $request->input('content');
         $id = $request->input('id');
         $userId = Auth::id();
-        
-        //get feedback from openai
-        //$feedback = Openai::exec($content);
-
 
         // Insert the diary entry
         $newdiary = JournalRepository::InsertDiary($userId, $date, $content,$id);
-        
-        //insert feedback
-        //JournalRepository::InsertFeedback($userId, $date, $feedback);
-        
-        
+               
         // Return the response
         return response()->json($newdiary,200);
     }
