@@ -4,10 +4,10 @@
 ## 使い方
 
 ### 1. register or sign up ユーザー登録ボタンを押す
-<img src="./images/app7.jpg">
+<img src="images/Screenshot 2024-04-12 at 0.53.32.png">
 
 ### 2. ログイン画面　
-<img src="./images/app5.jpg">
+<img src="images/Screenshot 2024-04-11 at 18.20.14.png">
 
 ### 3. /dashboard 画面
 ここではカレンダーの日付の枠を押すとその日付のジャーナリングページに飛びます。
@@ -16,7 +16,7 @@
 
 ### 4. ジャーナリングページ
 <img src="./images/app4.jpg">
-<img src="./images/app6.jpg">
+<img src="images/Screenshot 2024-04-12 at 0.51.33.png">
 GET FEEDBACK ボタンを押すとその日に書いたジャーナリングに対するAIからのフィードバックがもらえます。
 <img src="./images/app1.jpg">
 
